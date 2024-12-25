@@ -1,0 +1,71 @@
+@import url("https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&f[]=public-sans@200,400,500,600&display=swap");
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 17px;
+  position: relative;
+  z-index: 1;
+}
+
+.logoName {
+  font-family: "General Sans", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.3rem;
+  font-size: clamp(1.3rem, 1.0099447513812154rem + 1.2375690607734806vw, 2rem);
+  line-height: 51px;
+  color: #ededed;
+}
+
+.navListParent {
+  display: flex;
+  align-items: center;
+}
+
+.navListParent li {
+  font-family: "Source Code Pro", monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.16rem;
+  line-height: 23px;
+  color: #8c8c8c;
+  margin-right: 1.7em;
+}
+
+.navListParent li:last-of-type {
+  margin-right: 0;
+}
+
+.navListParent li a {
+  display: block;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.navListParent li a:hover {
+  text-decoration-line: underline;
+  color: #ffffff;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+
+.navListParent li a svg {
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+/* 
+font-family: 'Aleo', serif;
+font-family: 'Public Sans', sans-serif;
+font-family: 'Source Code Pro', monospace; 
+*/

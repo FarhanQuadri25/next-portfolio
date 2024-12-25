@@ -1,0 +1,106 @@
+@import url("https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&f[]=public-sans@200,400,500,600&display=swap");
+
+.section {
+  background-image: url("/homeBg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.new__container {
+  margin-top: 5rem;
+}
+.head_desc {
+  opacity: 0; /* Hide the text initially */
+  animation: fade-in 2s forwards;
+  animation-delay: 0.7s;
+}
+.head_name {
+  font-family: "Public Sans", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 3rem;
+  font-size: clamp(3rem, 1.7569060773480663rem + 5.303867403314917vw, 6rem);
+  line-height: 135px;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  text-align: center;
+  position: relative;
+  justify-content: center;
+}
+
+.head_desc {
+  color: #ededed;
+}
+
+.head_name_OutlineText {
+  -webkit-text-stroke: 1px #717171;
+  position: absolute;
+  top: -31px;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  color: transparent;
+  font-size: 3rem;
+  font-size: clamp(3rem, 1.5497237569060773rem + 6.1878453038674035vw, 6.5rem);
+  font-family: "Public Sans";
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.head_name_MainText {
+  color: #ededed;
+  font-family: "Public Sans";
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.head_desc {
+  font-family: "Public Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 41px;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 60ch;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.arrowDownDiv svg {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.arrowDownDiv {
+  position: relative;
+  margin-top: 7em;
+}
+
+.arrowDownDiv svg {
+  cursor: pointer;
+  position: absolute;
+  top: -1em;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
